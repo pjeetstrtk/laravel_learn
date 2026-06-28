@@ -9,4 +9,5 @@ Route::get('/', function () {
 });
 
 
-Route::get('/tasks', [TaskController::class, 'index']);
+Route::get('/tasks', [TaskController::class, 'index'])
+->name('tasks.index');
