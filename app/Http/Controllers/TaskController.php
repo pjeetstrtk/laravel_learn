@@ -14,10 +14,11 @@ class TaskController extends Controller
     public function index()
     {
         $tasks = Task::all();
-        return view('tasks.index', compact('tasks'));
+        return view('tasks.index');
+        //return view('tasks.index' compact('tasks'));
     }
 
-    /**
+    /*
      * Show the form for creating a new resource.
      */
     public function create()
